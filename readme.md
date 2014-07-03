@@ -1,4 +1,4 @@
-# gulp-html-replace [![NPM version][npm-image]][npm-url] [![Build status][travis-image]][travis-url]
+# gulp-django-compressor [![NPM version][npm-image]][npm-url] [![Build status][travis-image]][travis-url]
 
 > Replace build blocks in HTML. Like useref but done right.
 
@@ -14,14 +14,14 @@ That should be enough for you code to continue to work with the new version.
 ## Usage
 Install:
 ```shell
-npm install --save-dev gulp-html-replace
+npm install --save-dev gulp-django-compressor
 ```
 
 Put some blocks in your HTML file:
 ```html
-<!-- build:<name> -->
+{% compress css %}
 Everything here will be replaced
-<!-- endbuild -->
+{% endcompress %}
 ```
 `name` is the name of the block. Could consist of letters, digits, underscore ( **_** ) and hyphen ( **-** ) symbols.
 
